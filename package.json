@@ -1,0 +1,52 @@
+{
+  "name": "react-redux-3d-viewer"
+  "version": "0.0.1",
+  "description": "Base implementation of React app, along with babylonjs 3D rendering engine - Webpack, Redux, Redux Devtools, React router included.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Paul Walczewski",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rackt/redux/issues"
+  },
+  "homepage": "http://rackt.github.io/redux",
+  "dependencies": {
+    "babylonjs": "^2.2.0",
+    "history": "^1.17.0",
+    "humps": "^0.6.0",
+    "isomorphic-fetch": "^2.1.1",
+    "lodash": "^3.10.1",
+    "normalizr": "^1.0.0",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-redux": "^2.1.2",
+    "react-router": "^1.0.3",
+    "redux": "^3.0.0",
+    "redux-logger": "^2.0.2",
+    "redux-router": "^1.0.0-beta3",
+    "redux-thunk": "^0.1.0",
+    "sass-loader": "^3.1.2"
+  },
+  "devDependencies": {
+    "babel-core": "^5.6.18",
+    "babel-loader": "^5.1.4",
+    "babel-plugin-react-transform": "^1.1.0",
+    "concurrently": "^0.1.1",
+    "css-loader": "^0.23.1",
+    "express": "^4.13.3",
+    "node-sass": "^3.4.2",
+    "react-transform-hmr": "^1.0.0",
+    "redux-devtools": "^3.0.0",
+    "redux-devtools-dock-monitor": "^1.0.1",
+    "redux-devtools-log-monitor": "^1.0.1",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.9.11",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.2.0"
+  }
+}
