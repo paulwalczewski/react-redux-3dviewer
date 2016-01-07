@@ -11,9 +11,6 @@ var api = {};
               scene : null
           },
           createScene : function(){
-           var mycanvas = document.createElement("canvas");
-            mycanvas.id = "mycanvas";
-            document.body.appendChild(mycanvas);
            if (BABYLON.Engine.isSupported()) {
              this.sceneVars.canvas = document.getElementById("viewer3Dcontainer");
              this.sceneVars.engine = new BABYLON.Engine(this.sceneVars.canvas, true);
@@ -22,7 +19,7 @@ var api = {};
                   scene.executeWhenReady(function () {
                       api.babylon.sceneVars.scene = scene;
                       scene.clearColor = new BABYLON.Color3(1, 1, 1); //sets white background to 3d scene (otherwise screenshots got black backgrounds)
-                      var camera = new BABYLON.ArcRotateCamera("Camera", Math.PI / 1, 1.5, 2.2, new BABYLON.Vector3(0, 0, 0), scene);
+                      var camera = new BABYLON.ArcRotateCamera("Camera", Math.PI / 4, 1.5, 12.2, new BABYLON.Vector3(0, 0, 0), scene);
                            camera.angularSensibility = 700;
                            camera.wheelPrecision = 300;
                            scene.activeCamera = camera;

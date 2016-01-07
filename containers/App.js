@@ -4,6 +4,7 @@ import { pushState } from 'redux-router'
 import Viewer3D from '../components/Viewer3D'
 import Header from '../components/header/Header'
 import { resetErrorMessage } from '../actions'
+import './app.scss';
 
 
 class App extends Component {
@@ -45,8 +46,8 @@ class App extends Component {
 
     //additional, not required scene options
     let sceneOptions = {
-      width : window.innerWidth,
-      height : window.innerHeight
+      width : 700,
+      height : 500
     }
 
     return (
