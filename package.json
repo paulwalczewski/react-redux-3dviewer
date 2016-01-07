@@ -1,5 +1,5 @@
 {
-  "name": "react-redux-3d-viewer"
+  "name": "react-redux-3d-viewer",
   "version": "0.0.1",
   "description": "Base implementation of React app, along with babylonjs 3D rendering engine - Webpack, Redux, Redux Devtools, React router included.",
   "scripts": {
