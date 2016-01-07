@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 import { pushState } from 'redux-router'
-import Viewer3D from '../components/Viewer3D'
 import Header from '../components/header/Header'
 import { resetErrorMessage } from '../actions'
 import './app.scss';
@@ -44,16 +43,11 @@ class App extends Component {
   render() {
     const { children, inputValue } = this.props;
 
-    //additional, not required scene options
-    let sceneOptions = {
-      width : 700,
-      height : 500
-    }
 
     return (
       <div>
         <Header></Header>
-        <Viewer3D modelSource="/cube.json" sceneOptions={sceneOptions} showControls="true"  />
+       
         <hr />
         {this.renderErrorMessage()}
         {children}
