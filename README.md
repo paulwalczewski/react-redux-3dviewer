@@ -23,5 +23,5 @@ This project can also be used as a react-redux starting kit to create new projec
 
 1. get the project from repo
 2. cd to project, then npm install
-3. for development server:'<span style='font-style:italic'>npm start</span>' 
-4. for production build: '<span style='font-style:italic'>npm bild</span>' (build placed in /dist folder)
+3. for development server: 'npm start' 
+4. for production build: 'npm build' (build placed in /dist folder)
