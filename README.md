@@ -2,11 +2,13 @@
 
 <img src='http://react3dviewer.aurity.co/screenshot_1.jpg' alt='react+redux 3d viewer' />
 
-Demo - <a href='http://react3dviewer.aurity.co'>http://react3dviewer.aurity.com</a>
+Sample implementantion of 3Dviewer react component. 
+It can be used, for example, to display products in full 3D.
 
-Sample implementantion of 3Dviewer react component. It can be used, for example, to display products in full 3D.
+<strong>Demo</strong>
+<a href='http://react3dviewer.aurity.co'>http://react3dviewer.aurity.com</a>
 
-Sample implementantion uses:
+<strong>Sample implementantion uses:</strong>
 
 - webpack
 - react + redux + redux devtools + react router
@@ -21,4 +23,5 @@ This project can also be used as a react-redux boilerplate project (after removi
 
 1. get the project from repo
 2. cd to project, then npm install
-3. npm start for development server, npm run build for compiled version (placed in /dist)
+3. for development server:'<span style='font-style:italic'>npm start</span>' 
+4. for production build: '<span style='font-style:italic'>npm bild</span>' (build placed in /dist folder)
