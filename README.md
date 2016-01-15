@@ -16,7 +16,7 @@ It can be used, for example, to display products in full 3D.
 - written in ES6-7 (babel fallback)
 - <a href="http://www.babylonjs.com/" target="_blank">babylonjs</a> library for actual 3d rendering. I find it better than currently the most popular webgl library (<a href="threejs.org" target="_blank">threejs</a>). 
 
-This project can also be used as a react-redux starting kit to create new project (see http://react3dviewer.aurity.co/StarterKitPage for more details)
+This project can also be used as a react-redux starting kit to create new project (see <a href='http://react3dviewer.aurity.co/StarterKitPage'>starter kit page</a> for more details)
 
 <br/>
 <strong>Installation:</strong>
