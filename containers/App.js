@@ -41,14 +41,20 @@ class App extends Component {
   }
 
   render() {
-    const { children, inputValue } = this.props;
-
-
+    const { children, inputValue, currentUrl } = this.props;
+    const menuLinks = [
+      {
+        label: "Home",
+        url: '/'
+      },
+      {
+        label: "React starter kit",
+        url: '/StarterKitPage'
+      }
+    ]
     return (
       <div>
-        <Header></Header>
-       
-        <hr />
+        <Header currentUrl={currentUrl} menuLinks={menuLinks} ></Header>
         {this.renderErrorMessage()}
         {children}
       </div>
@@ -69,7 +75,8 @@ App.propTypes = {
 function mapStateToProps(state) {
   return {
     errorMessage: state.errorMessage,
-    inputValue: state.router.location.pathname.substring(1)
+    inputValue: state.router.location.pathname.substring(1),
+    currentUrl: state.router.location.pathname
   }
 }
 

@@ -1,9 +1,10 @@
 {
   "name": "react-redux-3d-viewer",
-  "version": "0.0.1",
+  "version": "0.8.0",
   "description": "Base implementation of React app, along with babylonjs 3D rendering engine - Webpack, Redux, Redux Devtools, React router included.",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "node compile.js"
   },
   "author": "Paul Walczewski",
   "repository": {
@@ -11,10 +12,6 @@
     "url": ""
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rackt/redux/issues"
-  },
-  "homepage": "http://rackt.github.io/redux",
   "dependencies": {
     "babylonjs": "^2.2.0",
     "history": "^1.17.0",

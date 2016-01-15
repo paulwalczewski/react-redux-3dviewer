@@ -10,13 +10,18 @@ export default class Header extends Component {
   }
 
   render() {
+    let currentUrl = this.props.currentUrl;
     return (
-      <div>
-        <ul className="top-menu">
-        	<li><Link to={'/'}>Home</Link></li>
-        	<li><Link to={'/about'}>About</Link></li>
+        <nav className="top-menu">
+        <ul> 
+          {this.props.menuLinks.map(function(link, i){
+            let classType = (link.url === currentUrl) ? 'active' : 'normal';
+            return <li key={i}>
+               <Link to={link.url} className={classType}>{link.label}</Link>
+            </li>
+          })}
         </ul>
-      </div>
+        </nav>
     )
   }
 }

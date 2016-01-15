@@ -1,4 +1,139 @@
+$colorPrimary: #74cddd;
+$colorPrimaryDark: #2799ae;
+
 :global(body){
-	padding:50px 0 0 0;
+	padding:0;
 	margin:0;
+	font-family:Arial;
+	background:#dddede;
+	overflow-x:hidden;
+	width:100%;
+}
+
+a {
+	color:$colorPrimaryDark;
+	text-decoration:none;
+}
+
+:global(#viewer3dContainer){
+	background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(163,163,163,1) 100%);
+	cursor:move;
+	position:relative;
+}
+
+:global(.viewer3d-controls){
+	width:100%;
+	text-align:center;
+	position:absolute;
+	bottom:10px;
+	button {
+		background:transparent;
+		border:none;
+		background:#fff;
+		padding:8px 10px 6px;
+		margin:5px;
+		box-shadow:0px 1px 1px rgba(0,0,0,0.4);
+		border-radius:50%;
+		outline:none;
+		&:hover {
+			cursor:pointer;
+			background:$colorPrimary;
+		}
+	}
+}
+
+.code {
+	padding:16px;
+	font-family:Georgia;
+	font-size:0.8rem;
+	line-height:1.2rem;
+}
+
+.page-article {
+	padding:16px;
+	h3 {
+		margin-top:40px;
+		margin-bottom:10px;
+	}
+	ol > li, ul > li {
+		padding:0 0 10px 0;
+	}
+	table {
+		font-size:0.8rem;
+		th {
+			padding:0 10px 10px;
+		}
+		td {
+			border:1px solid #aaa;
+			padding:10px 6px;
+			&:first-child{
+				border-right:0;
+				font-family:Georgia;
+				font-style:italic
+			}
+		}
+	}
+}
+
+:global(.page-title) {
+	font-size:17px;
+	font-weight:lighter;
+	letter-spacing:2px;
+	color:#333;
+	padding:16px;
+	margin:0;
+	background:#fff;
+}
+
+:global(.page-subtitle) {
+	font-size:10px;
+	font-weight:lighter;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	color:#333;
+	margin:0;
+	background:#fff;
+	display:block;
+}
+
+$loaderColor: #000;
+
+.viewer3d-preloader {
+	transition: all 0.5s ease-in-out;
+	width:100%;
+	height:100%;
+	background:rgba(255,255,255,0.7);
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:0;
+	z-index:-1;
+	justify-content: center; /* align horizontal */
+	align-items: center;
+	display:flex;
+	&.shown {
+		opacity:1;
+		z-index:2;
+	}
+}
+.preloader-title {
+	font-size:0.7rem;
+	font-weight:lighter;
+	text-transform:uppercase;
+	letter-spacing:2px;
+}
+
+.preloader-circle {
+	width: 62px;
+	height: 62px;
+	clear: both;
+	margin: 20px auto;
+	border: 6px rgba($loaderColor,0.25) solid;
+	border-top: 6px rgba($loaderColor,1) solid;
+	border-radius: 50%;
+	animation: spCircRot .6s infinite linear;
+}
+@keyframes spCircRot {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(359deg); }
 }
