@@ -1,6 +1,6 @@
 # react-redux-3dviewer
 
-<img src='http://react3dviewer.aurity.co/screenshot_1.jpg' alt='react+redux 3d viewer' />
+<a href='http://react3dviewer.aurity.co'><img src='http://react3dviewer.aurity.co/screenshot_1.jpg' alt='react+redux 3d viewer' /></a>
 
 Sample implementantion of 3Dviewer react component. 
 It can be used, for example, to display products in full 3D.
