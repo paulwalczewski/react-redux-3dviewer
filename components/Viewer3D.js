@@ -67,7 +67,7 @@ export default class Viewer3D extends Component {
         that.state.babylonScene = scene;
         that.babylonCamera = camera;
 
-        camera.attachControl(canvas, true);
+        camera.attachControl(canvas, false); //setting false here prevents from scrolling window when mouse on 3d view
         camera.setPosition(that.state.sceneOptions.cameraPositionVector);
 
         scene.clearColor = new BABYLON.Color4(0,0,0,0); //transparent background
