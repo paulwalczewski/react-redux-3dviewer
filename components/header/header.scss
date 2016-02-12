@@ -11,7 +11,7 @@
 	}
 
 	li {
-		margin:20px 16px;
+		margin:20px 6px;
 		display:inline-block;
 	}
 	a {
@@ -20,11 +20,13 @@
 		color:#c6edf4;
 		text-decoration:none;
 		text-transform:uppercase;
+		padding:10px;
 		&:hover{
 			color:#74cddd;
 		}
 		&.active {
-			color:#fff;
+			color:#222;
+			background:#9CEEFB;
 			&:hover{
 				cursor:default;
 			}

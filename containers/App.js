@@ -44,8 +44,12 @@ class App extends Component {
     const { children, inputValue, currentUrl } = this.props;
     const menuLinks = [
       {
-        label: "Home",
+        label: "Example - 3D model",
         url: '/'
+      },
+      {
+        label: "Example - 360 deg images",
+        url: '/example-images-as-source'
       },
       {
         label: "React starter kit",

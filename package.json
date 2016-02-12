@@ -14,6 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "babylonjs": "^2.2.0",
+    "fetch": "^1.0.0",
     "history": "^1.17.0",
     "humps": "^0.6.0",
     "isomorphic-fetch": "^2.1.1",
