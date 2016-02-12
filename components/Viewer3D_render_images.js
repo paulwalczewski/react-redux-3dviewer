@@ -165,15 +165,11 @@ export default class Viewer3D_images extends Component {
 
   onDrag(ev) {
     if(this.state.dragging === true){
-      console.log('ev.screenX;=', ev.screenX);
       let prevX;
       if(this.state.xPos){
        prevX = this.state.xPos;
       }
       this.state.xPos = ev.screenX;
-      var diff = this.state.xPos - prevX;
-      console.log('diff=', diff);
-      if(diff < 10 && diff > - 10) return;
       if(prevX < this.state.xPos ){
        this.rotateLeft();
       } else{
